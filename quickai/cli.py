@@ -6,6 +6,7 @@ from typing import Sequence
 
 from .indexer import DEFAULT_DB_PATH, IndexOptions, index_codex_logs
 from . import query
+from .mcp import run_stdio_server
 from .report import write_html_report
 
 
@@ -59,6 +60,8 @@ def build_parser() -> argparse.ArgumentParser:
     report_parser = subparsers.add_parser("report", help="Generate a self-contained HTML report")
     report_parser.add_argument("--project", help="Filter by project name")
     report_parser.add_argument("--output", help="Output HTML path")
+
+    subparsers.add_parser("mcp", help="Run the MCP stdio server")
 
     return parser
 
@@ -118,6 +121,9 @@ def main(argv: Sequence[str] | None = None) -> int:
         path = write_html_report(db_path, output=output, project=args.project)
         print(path)
         return 0
+
+    if args.command == "mcp":
+        return run_stdio_server(db_path)
 
     parser.error(f"unknown command: {args.command}")
     return 2
