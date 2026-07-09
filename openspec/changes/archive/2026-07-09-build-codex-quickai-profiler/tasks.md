@@ -19,12 +19,12 @@
 
 ## 4. Documentation And Verification
 
-- [ ] 4.1 Add README, architecture, and usage examples.
-- [ ] 4.2 Add unit tests with Codex JSONL fixtures, including duplicate/empty token-count events.
-- [ ] 4.3 Run local checks and validate OpenSpec artifacts.
+- [x] 4.1 Add README, architecture, and usage examples.
+- [x] 4.2 Add unit tests with Codex JSONL fixtures, including duplicate/empty token-count events.
+- [x] 4.3 Run local checks and validate OpenSpec artifacts.
 
 ## 5. Issue Workflow
 
 - [x] 5.1 Create GitHub epics/tasks through issue-creator.
-- [ ] 5.2 Execute ready issues through issue-manager.
-- [ ] 5.3 Close or link completed issues and leave the repo in a working state.
+- [x] 5.2 Execute ready issues through issue-manager.
+- [x] 5.3 Close or link completed issues and leave the repo in a working state.
