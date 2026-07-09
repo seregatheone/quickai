@@ -13,8 +13,8 @@
 
 ## 3. Query And Reports
 
-- [ ] 3.1 Implement stats, tasks/sessions, top, task, and tools CLI commands.
-- [ ] 3.2 Implement self-contained HTML report generation.
+- [x] 3.1 Implement stats, tasks/sessions, top, task, and tools CLI commands.
+- [x] 3.2 Implement self-contained HTML report generation.
 - [ ] 3.3 Implement minimal MCP stdio tools for stats, tasks, and report creation.
 
 ## 4. Documentation And Verification
